@@ -1,0 +1,6 @@
+############
+# R Studio #
+############
+.Rproj.user
+.Rhistory
+*.Rproj
