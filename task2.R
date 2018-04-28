@@ -81,7 +81,9 @@ run_task_2 <- function() {
   gender_disparity_order = rev(gender_disparity_order)
   gender_disparity_df = gender_disparity_df[gender_disparity_order, ]
   
-  #order_by_single_women <- order(gender_disparity_df$single_women)
-  #gender_disparity_df <- gender_disparity_df[order_by_single_women, ]
-  View(gender_disparity_df)
+  return (gender_disparity_df)
+}
+
+visualize_task_2 <- function(data_to_visualize) {
+  View(data_to_visualize)
 }

@@ -1,4 +1,6 @@
 source("task1.R")
 run_task_1()
+visualize_task_1()
 source("task2.R")
-run_task_2()
+task_2_result <- run_task_2()
+visualize_task_2(task_2_result)
