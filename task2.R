@@ -85,5 +85,11 @@ run_task_2 <- function() {
 }
 
 visualize_task_2 <- function(data_to_visualize) {
+  library("reshape2")
+  library("ggplot2")
+  
   View(data_to_visualize)
+  
+  melted_data <- melt(data_to_visualize[, c(1,5)], "Postal.code.area")
+  ggplot(melted_data, aes(x = Postal.code.area, y = value)) + geom_bar(stat = "identity") + coord_flip()
 }
